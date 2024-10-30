@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   void loginLogic(String user, String pass) {
     setState(() {
       if (user == 'admin' && pass == 'admin') {
-        final String nama = 'M. Prabu K. U';
+        final String nama = 'M. Prabu';
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DashboardPage(text: nama)));
       } else {
         print('salah...');
